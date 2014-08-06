@@ -234,7 +234,7 @@
 }
 
 - (BOOL) blurOnceIfPossible {
-	if (!CGRectIsEmpty(self.bounds) && self.layer.presentationLayer) {
+	if (!CGRectIsEmpty(self.bounds)) {
 		[self forceRefresh];
 		return YES;
 	} else {
